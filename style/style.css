@@ -151,13 +151,16 @@ h1{
     margin: 40px;
 }
 
-.figma-icon {
+.css3-icon .git-icon .html-icon .figma-icon .js-icon {
     transition: transform 0.3s ease;
 }
 
-.figma-icon:hover {
+.css3-icon .git-icon .html-icon .js-icon .figma-icon:hover {
     transform: scale(1.2);
 }
+
+
+
 
 /* THIRD SECTION */
 
