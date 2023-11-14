@@ -76,7 +76,7 @@ h1{
     list-style: none;
     justify-content: space-around;
     width: 500px;
-    margin: 60px auto;
+    margin: 100px auto;
 }
 
 .nav-line{
@@ -84,7 +84,7 @@ h1{
     height: 7px;
     background: #000;
     margin: 0 auto;
-    margin-top: -78px;
+    margin-top: -118px;
     border-radius: 5px;
 }
 
@@ -164,49 +164,54 @@ h1{
 
 /* THIRD SECTION */
 
-.third-section{
-    display: flex;
-    margin: 90px 130px 0 100px;
-    flex-direction: column;
+.third-section {
+margin: 75px 130px 0 100px;
 }
 
-.projects-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    margin-top: 30px;
-}
-
-.project-card{
-    width: 620px;
-    height: 468px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    background: rgba(92, 119, 172, 0.56);
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
-    margin-bottom: 40px;
-}
-
-.project1-img{
-    width: 620px;
-    height: 360px;
-    flex-shrink: 0;
-}
-
-.project1-h2{
-    text-align: center;
-    font-weight: 500;
-    padding-top: 20px;
+.title-project{
     font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.project1-stack{
+.projects {
+    text-align: center; 
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+.front-img {
+    width: 1018px;
+    height: 473px;
+    flex-shrink: 0;
+    border-radius: 40px;
+}
+
+.icons-container {
     display: flex;
     justify-content: center;
 }
 
-.stackimg{
-    width: 30px;
-    height: 30px;
-    margin: 10px;  
+.projects-icons{
+    width: 51px;
+    height: 51px;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+/* FOOTER */
+
+.footer-container{
+    width: 100%;
+    height: 100px;
+    background-color: #465889;
+    margin-top: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.p-footer{
+    margin: 0 50px 20px 0;
 }
