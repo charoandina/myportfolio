@@ -50,3 +50,28 @@ function backToImageCSS() {
     cssIcon.src = "img/css3.png";
 }
 
+//FORM
+
+document.getElementById("contactForm").addEventListener('submit', function (event) {
+
+    event.preventDefault();
+
+    let nombre = document.getElementById('nombre').value;
+    if (nombre.trim() === '') {
+        alert('Por favor, ingresa tu nombre.');
+        return;
+    }
+
+    let email = document.getElementById('email').value;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Por favor, ingresa una dirección de correo electrónico válida.');
+        return;
+    }
+
+    Swal.fire({
+        title: "¡Mensaje enviado con éxito!",
+        text: "¡A la brevedad me contactaré contigo!",
+        icon: "success"
+      });
+});

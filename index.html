@@ -8,15 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">    <title>Rochi Garcia de Andina</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="font/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
     <!--LINKTREE SEC-->
     <div class="linktree-container">
         <ul class="linktree">
-            <li><a href="https://github.com/charoandina"><img src="img/github.png" alt="github-icon" class="github-icon"></a></li>
-            <li><a href="www.linkedin.com/in/rosario-garcia-de-andina-9269b6b5"><img src="img/linkedin.png" alt="linkedin-icon" class="linkedin-icon"></a></li>
-            <li><a href="#"><img src="img/behance.png" alt="behance-icon" class="behance-icon"></a></li>
+            <li><a href="https://github.com/charoandina" target="_blank"><img src="img/github.png" alt="github-icon" class="github-icon"></a></li>
+            <li><a href="www.linkedin.com/in/rosario-garcia-de-andina-9269b6b5" target="_blank"><img src="img/linkedin.png" alt="linkedin-icon" class="linkedin-icon"></a></li>
+            <li><a href="https://www.behance.net/rosariogarcia7" target="_blank"><img src="img/behance.png" alt="behance-icon" class="behance-icon" target="_blank"></a></li>
         </ul>
     </div>    
 
@@ -126,7 +127,7 @@
             <h2 class="h2-section">CONTACTATE</h2>
             <p class="p-title-section">.</p>
         </div>
-        <form>
+        <form id="contactForm">
             <label for="nombre">NOMBRE</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -134,7 +135,7 @@
             <input type="email" id="email" name="email" required>
 
             <label for="phonenumber">TELEFONO</label>
-            <input type="number" id="phonenumber" name="phonenumber" required>
+            <input type="tel" id="phonenumber" name="phonenumber" required>
 
             <label for="mensaje">MENSAJE</label>
             <textarea id="mensaje" name="mensaje" rows="4" class="text-area" required></textarea>
@@ -147,6 +148,7 @@
     <!--FOOTER-->
     <footer>
         <div class="footer-container">
+            <p class="p-footer"><a href="mailto:rosario.garciadea@gmail.com" class="a-footer">rosario.garciadea@gmail.com</a></p>
             <p class="p-footer">© 2023 Rosario García de Andina</p>
         </div>
     </footer>
