@@ -7,18 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">    <title>Rochi Garcia de Andina</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
 </head>
 <body>
-    <!--FIRST SEC-->
-    <div class="title-container">
-        <div class="subtitle-container">
-        <h1>ROSARIO GARCIA DE <br>ANDINA</h1>
-        <h2 class="subtitle">DESARROLLADORA WEB</h2>
-        </div>
-        <div>
-            <img src="img/yo.jpg" alt="me" class="img-first">
-        </div>
-    </div>
+
     <!--LINKTREE SEC-->
     <div class="linktree-container">
         <ul class="linktree">
@@ -26,8 +18,18 @@
             <li><a href="www.linkedin.com/in/rosario-garcia-de-andina-9269b6b5"><img src="img/linkedin.png" alt="linkedin-icon" class="linkedin-icon"></a></li>
             <li><a href="#"><img src="img/behance.png" alt="behance-icon" class="behance-icon"></a></li>
         </ul>
-        <div class="nav-line"></div>
+    </div>    
+
+    <!--FIRST SEC-->
+    <div class="title-container">
+        <div class="subtitle-container">
+            <h1>Rosario</h1>
+            <h2 class="h2-title">Garcia de Andina</h2>
+            <h2 class="subtitle">Web Developer</h2>
+        </div>
+            <img src="img/me2.jpg" alt="me" class="img-first">
     </div>
+
     <!--SECOND SEC-->
     <div class="second-section">
         <div>
@@ -56,7 +58,6 @@
             <img src="img/figma.png" alt="" class="stackicon figma-icon" id="figmaIcon" onmouseover="changeImageFigma()" onmouseout="backToImageFigma()">
             <img src="img/javascript.png" alt="" class="stackicon js-icon" id="jsIcon" onmouseover="changeImageJS()" onmouseout="backToImageJS()">
     </div>
-
 
     <!--THIRD SEC-->
     <div class="third-section">
@@ -106,7 +107,7 @@
 
         <div class="projects">
             <h2 class="title-project">PREGUNTAS Y RESPUESTAS</h2>
-                <a href="https://charoandina.github.io/agenciaviaje/">
+                <a href="https://charoandina.github.io/preguntasyrespuestas/">
                     <img src="img/juegopreguntas.png" alt="front ceibo" class="front-img">
                 </a>
             <div class="icons-container">
@@ -118,6 +119,31 @@
         </div>
 
     </div>
+
+    <!--CONTACT FORM-->
+    <div class="form-container">
+        <div class="text-section">
+            <h2 class="h2-section">CONTACTATE</h2>
+            <p class="p-title-section">.</p>
+        </div>
+        <form>
+            <label for="nombre">NOMBRE</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">CORREO ELECTRONICO</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phonenumber">TELEFONO</label>
+            <input type="number" id="phonenumber" name="phonenumber" required>
+
+            <label for="mensaje">MENSAJE</label>
+            <textarea id="mensaje" name="mensaje" rows="4" class="text-area" required></textarea>
+
+            <button type="submit" class="button-send">ENVIAR</button>
+        </form>
+
+    </div>
+
     <!--FOOTER-->
     <footer>
         <div class="footer-container">

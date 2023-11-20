@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+@import url(../font/stylesheet.css);
+
 body {
     background-color: #2A2F5D;
     color: #fefefe;
@@ -21,71 +23,79 @@ body {
 /* FIRST SECTION */
 
 .title-container {
-    margin: 140px 100px 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 100px 200px 0 200px;
 }
 
 h1{
-    font-weight: 700;
-    font-size: 52px;
-    font-size: 48px;
     animation: slideInFromLeft 2s;
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 100px;
+    letter-spacing: 2.5px;
+}
+
+.h2-title{
+    animation: slideInFromLeft 2s;
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80px;
+    letter-spacing: 2.5px;
 }
 
 .subtitle {
     color: #5C77AC;
-    font-weight: 800;
     animation: slideInFromLeft 2.5s;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 60px;
 }
 
 .img-first{
-    width: 395px;
-    height: 395px;
-    border-radius: 400px;
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
 }
 
 /* ICONS NAV */
 
 .github-icon{
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
+    filter: invert(100%);
 }
 
 .linkedin-icon{
-    width: 46px;
-    height: 46px;
+    width: 39px;
+    height: 39px;
+    filter: invert(100%);
 }
 
 .behance-icon{
-    width: 57px;
-    height: 57px;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
 }
 
 .linktree-container {
     position: fixed;
-    z-index: 100;
-    bottom: 10;
-    left: 50%; /* Centramos horizontalmente */
-    transform: translateX(-50%); /* Centramos horizontalmente */
+    margin: 0 0 0 50px;
 }
 
 .linktree{
     display: flex;
+    flex-direction: column;
     list-style: none;
-    justify-content: space-around;
-    width: 500px;
-    margin: 100px auto;
+    align-items: center;
 }
 
-.nav-line{
-    width: 384px;
-    height: 7px;
-    background: #000;
-    margin: 0 auto;
-    margin-top: -118px;
-    border-radius: 5px;
+.linktree li {
+    margin-bottom: 30px;
 }
 
 .linktree li a img {
@@ -101,8 +111,8 @@ h1{
 .second-section{
     display: flex;
     justify-content: space-between;
-    margin: 235px 130px 0 100px;
     align-items: stretch;
+    margin: 235px 200px 0 200px;
 }
 
 .text-section {
@@ -112,14 +122,18 @@ h1{
 
 .h2-section{
     color: #5C77AC;
-    font-size: 42px;
+    font-size: 50px;
     font-weight: 600;
+    font-family: 'Proxima Nova Lt';
+    font-style: normal;
 }
 
 .p-title-section {
     color: #FEFEFE;
-    font-size: 42px;
+    font-size: 50px;
     font-weight: 600;
+    font-family: 'Proxima Nova Lt';
+    font-style: normal;
 }
 
 .img-section{
@@ -129,7 +143,7 @@ h1{
 
 .p-section {
     width: 750px;
-    margin-top: 30px;
+    margin-top: 40px;
     line-height: 40px;
 }
 
@@ -152,7 +166,7 @@ h1{
 }
 
 .css3-icon .git-icon .html-icon .figma-icon .js-icon {
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .css3-icon .git-icon .html-icon .js-icon .figma-icon:hover {
@@ -162,14 +176,19 @@ h1{
 /* THIRD SECTION */
 
 .third-section {
-margin: 75px 130px 0 100px;
+    margin: 75px 200px 0 200px;
 }
 
 .title-project{
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 25px;
     font-weight: 600;
     line-height: normal;
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-style: normal;
+
+    letter-spacing: 2.5px;
 }
 
 .projects {
@@ -195,6 +214,68 @@ margin: 75px 130px 0 100px;
     height: 51px;
     flex-shrink: 0;
     margin: 20px;
+}
+
+/* CONTACT FORM */
+
+.form-container{
+    margin: 100px 200px 0 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+label {
+    font-size: 23px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #465889;
+    color: #FEFEFE;
+}
+
+.text-area {
+    width: 500px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #465889;
+    border-style: none;
+    color: #FEFEFE;
+}
+
+.button-send {
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.button-send:hover {
+    background-color: #465889;
+    color: #FEFEFE;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 /* FOOTER */
