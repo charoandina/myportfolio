@@ -97,20 +97,13 @@ h1{
     margin-top: 15px;
     margin-left: 10px;
     cursor: pointer;
-}
-
-.english-button {
     margin-right: 50px;
 }
 
-.spanish-button {
+.button-style:hover {
     background-color: #5C77AC;
     color: #FEFEFE;
-}
-
-.selected-language-button {
-    background-color: #5C77AC;
-    color: #FEFEFE;
+    transition: 0.5s;
 }
 
 /* ICONS NAV */
