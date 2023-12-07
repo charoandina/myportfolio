@@ -75,3 +75,35 @@ document.getElementById("contactForm").addEventListener('submit', function (even
         icon: "success"
       });
 });
+
+// LANGUAGE BUTTON
+
+let esButton = document.getElementById("esButton");
+let enButton = document.getElementById("enButton");
+let aboutMeParagraph = document.getElementById("aboutMeParagraph");
+let subtitle = document.getElementById("subtitle");
+let aboutMe = document.getElementById("aboutMe");
+let proyects = document.getElementById("proyects");
+let contactMe = document.getElementById ("contactMe");
+let nameForm = document.getElementById ("nameForm");
+let emailForm = document.getElementById ("emailForm");
+let subjectForm = document.getElementById("subjectForm");
+let messageForm = document.getElementById("messageForm");
+let sendButtonForm = document.getElementById("sendButtonForm");
+let popQuiz = document.getElementById ("popQuiz");
+
+function changeLanguage(){
+    aboutMeParagraph.textContent = "I possess a strong proficiency in development with HTML, CSS, and JavaScript, supported by over two years of professional experience in each of these technologies. My commitment to excellence is reflected in my continuous pursuit of learning to expand and refine my skill set. In addition to my experience in web technologies, my enthusiasm extends to mobile technologies and user-centered design."
+    subtitle.textContent = "Web Developer";
+    aboutMe.textContent = "ABOUT ME";
+    proyects.textContent = "PROYECTS";
+    contactMe.textContent = "CONTACT ME";
+    nameForm.textContent = "NAME";
+    emailForm.textContent = "EMAIL";
+    subjectForm.textContent = "SUBJECT";
+    messageForm.textContent = "MESSAGE";
+    sendButtonForm.textContent = "SEND";
+    popQuiz.textContent = "POP QUIZ";
+    enButton.classList.add("selected-language-button");
+    esButton.classList.remove("spanish-button");
+}

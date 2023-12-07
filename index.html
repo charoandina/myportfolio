@@ -12,6 +12,11 @@
 </head>
 <body>
 
+    <div class="language-buttons">
+        <button class="spanish-button button-style" id="esButton">ES</button>
+        <button class="english-button button-style" id="enButton" onclick="changeLanguage()">EN</button>
+    </div>
+
     <!--LINKTREE SEC-->
     <div class="linktree-container">
         <ul class="linktree">
@@ -26,7 +31,7 @@
         <div class="subtitle-container">
             <h1>Rosario</h1>
             <h2 class="h2-title">Garcia de Andina</h2>
-            <h2 class="subtitle">Web Developer</h2>
+            <h2 class="subtitle" id="subtitle">Desarrolladora Web</h2>
         </div>
             <img src="img/me2.jpg" alt="me" class="img-first">
     </div>
@@ -35,15 +40,16 @@
     <div class="second-section">
         <div>
             <div class="text-section">
-                <h2 class="h2-section">SOBRE MI</h2>
+                <h2 class="h2-section" id="aboutMe">SOBRE MI</h2>
                 <p class="p-title-section">.</p>
             </div>
             <div>
-                <p class="p-section">Cuento con una gran habilidad en el manejo de HTML, CSS y Javascript.
-                    Tengo más de dos años de experiencia con cada una de éstas y estoy ansiosa
-                    por aprender aún más tecnologías para mejorar mi conjunto de habilidades.
-                    Además de las tecnologías web, también me apasionan las tecnologías
-                    móviles y el diseño basado en la experiencia del usuario.</p>
+                <p class="p-section" id="aboutMeParagraph">Poseo una sólida competencia en el desarrollo con HTML, CSS y JavaScript, 
+                    respaldada por una experiencia profesional de más de dos años en cada una de estas 
+                    tecnologías. Mi compromiso con la excelencia se refleja en mi constante búsqueda de 
+                    aprendizaje para ampliar y perfeccionar mi conjunto de habilidades. Además de mi 
+                    experiencia en tecnologías web, mi entusiasmo se extiende hacia las tecnologías móviles
+                     y el diseño centrado en la experiencia del usuario.</p>
             </div>
         </div>
         <div>
@@ -63,7 +69,7 @@
     <!--THIRD SEC-->
     <div class="third-section">
         <div class="text-section">
-            <h2 class="h2-section">PROYECTOS</h2>
+            <h2 class="h2-section" id="proyects">PROYECTOS</h2>
             <p class="p-title-section">.</p>
         </div>
         <div class="projects">
@@ -107,7 +113,7 @@
         </div>
 
         <div class="projects">
-            <h2 class="title-project">PREGUNTAS Y RESPUESTAS</h2>
+            <h2 class="title-project" id="popQuiz">PREGUNTAS Y RESPUESTAS</h2>
                 <a href="https://charoandina.github.io/preguntasyrespuestas/">
                     <img src="img/juegopreguntas.png" alt="front ceibo" class="front-img">
                 </a>
@@ -124,23 +130,23 @@
     <!--CONTACT FORM-->
     <div class="form-container">
         <div class="text-section">
-            <h2 class="h2-section">CONTACTATE</h2>
+            <h2 class="h2-section" id="contactMe">CONTACTATE</h2>
             <p class="p-title-section">.</p>
         </div>
-        <form id="contactForm">
-            <label for="nombre">NOMBRE</label>
+        <form id="contactForm" action="mailto:rosario.garciadea@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre" id="nameForm">NOMBRE</label>
             <input type="text" id="nombre" name="nombre" required>
 
-            <label for="email">CORREO ELECTRONICO</label>
+            <label for="email" id="emailForm">CORREO ELECTRONICO</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="phonenumber">TELEFONO</label>
-            <input type="tel" id="phonenumber" name="phonenumber" required>
+            <label for="subject" id="subjectForm">ASUNTO</label>
+            <input type="text" id="subjectForm" name="subject" required>
 
-            <label for="mensaje">MENSAJE</label>
+            <label for="mensaje" id="messageForm">MENSAJE</label>
             <textarea id="mensaje" name="mensaje" rows="4" class="text-area" required></textarea>
 
-            <button type="submit" class="button-send">ENVIAR</button>
+            <button type="submit" class="button-send" id="sendButtonForm">ENVIAR</button>
         </form>
 
     </div>
