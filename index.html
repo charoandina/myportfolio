@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="font/stylesheet.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("rNO0ex7xKmJ_ChsfY");
+    })();
+    </script>
 </head>
 <body>
 
@@ -20,7 +28,7 @@
     <div class="linktree-container">
         <ul class="linktree">
             <li><a href="https://github.com/charoandina" target="_blank"><img src="img/github.png" alt="github-icon" class="github-icon"></a></li>
-            <li><a href="www.linkedin.com/in/rosario-garcia-de-andina-9269b6b5" target="_blank"><img src="img/linkedin.png" alt="linkedin-icon" class="linkedin-icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/rosario-garcia-de-andina" target="_blank"><img src="img/linkedin.png" alt="linkedin-icon" class="linkedin-icon"></a></li>
             <li><a href="https://www.behance.net/rosariogarcia7" target="_blank"><img src="img/behance.png" alt="behance-icon" class="behance-icon" target="_blank"></a></li>
         </ul>
     </div>    
@@ -140,12 +148,12 @@
             <input type="email" id="email" name="email" required>
 
             <label for="subject" id="subjectForm">ASUNTO</label>
-            <input type="text" id="subjectForm" name="subject" required>
+            <input type="text" id="subject" name="subject" required>
 
             <label for="mensaje" id="messageForm">MENSAJE</label>
             <textarea id="mensaje" name="mensaje" rows="4" class="text-area" required></textarea>
 
-            <button type="submit" class="button-send" id="sendButtonForm">ENVIAR</button>
+            <button type="submit" class="button-send" id="sendButtonForm" onclick="sendMail()">ENVIAR</button>
         </form>
 
     </div>

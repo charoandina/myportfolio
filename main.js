@@ -52,6 +52,18 @@ function backToImageCSS() {
 
 //FORM
 
+function sendMail () {
+    let parms = {
+        name : document.getElementById("nombre").value,
+        email : document.getElementById("email").value,
+        subject : document.getElementById("subject").value,
+        message : document.getElementById("mensaje").value
+    }
+
+    emailjs.send("service_9enjo9o","template_vpgqin6",parms);
+
+}
+
 document.getElementById("contactForm").addEventListener('submit', function (event) {
 
     event.preventDefault();
@@ -73,7 +85,10 @@ document.getElementById("contactForm").addEventListener('submit', function (even
         title: "¡Mensaje enviado con éxito!",
         text: "¡A la brevedad me contactaré contigo!",
         icon: "success"
-      });
+      }).then(function() {
+        location.reload();
+    });
+
 });
 
 // LANGUAGE BUTTON
