@@ -442,7 +442,7 @@ input {
     /* STACK SECTION */
 
     .stack-container{
-        height: 125px;
+        height: auto;
         margin: 10px 0 10px 0;
         display: flex;
         justify-content: center; 
@@ -450,9 +450,9 @@ input {
     }
 
     .stackicon {
-        width: 45px;
-        height: 45px;
-        margin: 15px;
+        width: 35px;
+        height: 35px;
+        margin: 10px;
     }
 
     /* THIRD SECTION */
