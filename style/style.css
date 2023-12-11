@@ -243,7 +243,7 @@ h1{
 
 .front-img {
     width: 1018px;
-    height: 473px;
+    height: auto;
     flex-shrink: 0;
     border-radius: 40px;
     max-width: 100%;
